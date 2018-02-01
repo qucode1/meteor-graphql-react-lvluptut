@@ -2,11 +2,15 @@ import React, { Fragment } from "react"
 import gql from "graphql-tag"
 import { graphql } from "react-apollo"
 
+import LoginForm from "./LoginForm"
+import RegisterForm from "./RegisterForm"
 import ResolutionForm from "./ResolutionForm"
 
 const App = ({ loading, resolutions }) =>
   loading ? null : (
     <Fragment>
+      <RegisterForm />
+      <LoginForm />
       <ResolutionForm />
       <ul>
         {resolutions.map(resolution => (
