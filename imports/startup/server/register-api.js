@@ -11,7 +11,7 @@ const testSchema = `
     resolutions: [Resolution]
   }
 `
-
+// hii,
 const typeDefs = [testSchema, ResolutionSchema]
 
 const testResolvers = {
