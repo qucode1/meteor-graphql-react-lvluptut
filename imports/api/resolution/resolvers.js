@@ -1,14 +1,9 @@
-const resolvers = {
+import Resolutions from "./resolutions"
+
+export default {
   Query: {
     resolutions() {
-      return [
-        {
-          _id: "abc",
-          name: "get stuff done!"
-        }
-      ]
+      return Resolutions.find({}).fetch()
     }
   }
 }
-
-export default resolvers
