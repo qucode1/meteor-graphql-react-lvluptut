@@ -4,6 +4,9 @@ export default {
       // console.log(userId)
       return user || {}
     }
+  },
+  User: {
+    email: ({ emails }) => emails[0].address
   }
   //   Mutation: {
   //     createResolution(obj, { name }, { userId }) {
