@@ -1,4 +1,5 @@
 import Resolutions from "./resolutions"
+import Goals from "../goal/goals"
 
 export default {
   Query: {
@@ -8,6 +9,9 @@ export default {
         userId
       }).fetch()
     }
+  },
+  Resolution: {
+    goals: ({ _id }) => Goals.find({ resolutionId: _id }).fetch()
   },
   Mutation: {
     createResolution(obj, { name }, { userId }) {

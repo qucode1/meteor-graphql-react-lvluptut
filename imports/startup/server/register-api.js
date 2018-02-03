@@ -9,7 +9,7 @@ import ResolutionResolvers from "../../api/resolution/resolvers"
 import UserSchema from "../../api/user/user.graphql"
 import UserResolvers from "../../api/user/resolvers"
 
-// hiio,
+// hio,
 const typeDefs = [ResolutionSchema, GoalSchema, UserSchema]
 
 const resolvers = merge(ResolutionResolvers, GoalResolvers, UserResolvers)
